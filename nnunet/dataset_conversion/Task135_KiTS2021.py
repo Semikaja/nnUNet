@@ -6,15 +6,15 @@ from nnunet.dataset_conversion.utils import generate_dataset_json
 
 if __name__ == '__main__':
     # this is the data folder from the kits21 github repository, see https://github.com/neheller/kits21
-    kits_data_dir = '/home/fabian/git_repos/kits21/kits21/data'
+    kits_data_dir = '/cluster/home/kajako/Prosjekt/kits21/kits21/AllDatasets/test'
 
     # This script uses the majority voted segmentation as ground truth
     kits_segmentation_filename = 'aggregated_MAJ_seg.nii.gz'
 
     # Arbitrary task id. This is just to ensure each dataset ha a unique number. Set this to whatever ([0-999]) you
     # want
-    task_id = 135
-    task_name = "KiTS2021"
+    task_id = 1
+    task_name = "KiTS_test_set"
 
     foldername = "Task%03.0d_%s" % (task_id, task_name)
 
